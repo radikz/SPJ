@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:text="Pengisian              1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/simpleListView_home_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="2dp"
+                android:listSelector="#309fff"
+                android:padding="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:text="Customer               4"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/simpleListView_home_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="2dp"
+                android:listSelector="#309fff"
+                android:padding="5dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:id="@+id/frame2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Buat SPJ               2"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <ListView
+                android:id="@+id/simpleListView_home_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="2dp"
+                android:listSelector="#309fff"
+                android:padding="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="SPJ Kembali            5"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <ListView
+                android:id="@+id/simpleListView_home_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="2dp"
+                android:listSelector="#309fff"
+                android:padding="5dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:id="@+id/frame3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Deliv.Check            3"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <ListView
+                android:id="@+id/simpleListView_home_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="2dp"
+                android:listSelector="#309fff"
+                android:padding="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Deliv.Check            6"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <ListView
+                android:id="@+id/simpleListView_home_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="2dp"
+                android:listSelector="#309fff"
+                android:padding="5dp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

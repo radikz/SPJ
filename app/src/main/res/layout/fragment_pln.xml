@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <!--pln-->
+            <TextView
+                android:id="@+id/textView_pln_sift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shift:"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-25dp"
+                android:layout_marginLeft="70dp" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <Spinner
+                    android:id="@+id/spinner_pln_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp"></Spinner>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_generator_pln_kvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kvar H"
+                    android:inputType="numberDecimal|number"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_generator_pln_kwh_lwbp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="KWH LWBP"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_generator_pln_kwh_wbp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="KWH WBP"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_generator_pln_kwh_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="KWH Total"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_generator_pln_kwh_gedung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="KWH Gedung"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/keterangan"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_generator_pln_keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Keterangan"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp">
+                    <Button
+                        android:id="@+id/button_generator_pln_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F00"
+                        android:background="#F00"
+                        android:text="Reset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp">
+                    <Button
+                        android:id="@+id/button_generator_pln_kirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:background="@color/colorPrimary"
+                        android:text="Kirim" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/progressBar_pln"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

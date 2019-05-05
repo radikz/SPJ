@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/button_spj_berangkat_2_ubah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#ff0000"
+                android:background="#ff0000"
+                android:textColor="#ffffff"
+                android:text="UBAH SPJ BERANGKAT" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/plate"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-65dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Trip"
+                    android:enabled="false"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/driver"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Driver"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/driver2"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_asisten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Asisten Driver"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/truck1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_head_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Head Truck"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/plate"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_nopol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No. Polisi"
+                    android:enabled="false"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/bendera"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_tujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tujuan"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/bendera"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_plant_kembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Plant Kembali"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalender"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="96dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tanggal Antar"
+                        android:layout_marginLeft="70dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="6">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/text_spj_berangkat_2_date"
+                        android:layout_weight="6"/>
+                    <!--
+                    <Button
+                        android:id="@+id/button_spj_berangkat_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pilih"
+                        android:textSize="10dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+                     -->
+                </LinearLayout>
+            </LinearLayout>
+<!--Trailer-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/trailer"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="-10dp">
+
+                <TextView
+                    android:id="@+id/text_spj_berangkat_2_moda_transport_awal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Moda Transport"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/act_2_group_single_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                app:tbgCheckedButton="@+id/act_2_choice_apv"
+                app:tbgChildSpacing="15dp">
+
+                <RadioButton
+                    android:id="@+id/act_2_choice_apv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_bg_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="APV"
+                    android:textColor="@color/selector_text_radio_button" />
+
+                <RadioButton
+                    android:id="@+id/act_2_choice_crane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_bg_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="HYAPCRANE"
+                    android:textColor="@color/selector_text_radio_button" />
+
+                <RadioButton
+                    android:id="@+id/act_2_choice_trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_bg_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="TRAILER"
+                    android:textColor="@color/selector_text_radio_button" />
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+
+            <!--tempat pemetaan moda trasnportasi-->
+
+            <!--trai-->
+            <!--hyap-->
+
+            <FrameLayout
+                android:id="@+id/act_2_frame_crane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:visibility="gone">
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/apv2" />
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/act_2_group_single_radiobutton_frame_hya"
+                            android:layout_width="265dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorAccent"
+                            android:padding="5dp"
+                            app:tbgCheckedButton="@+id/act_2_choice_9"
+                            app:tbgChildSpacing="10dp">
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_9"
+                                android:layout_width="70dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_10"
+                                android:layout_width="70dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_9"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_11"
+                                android:layout_width="70dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_10"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
+            <!--hyap-->
+
+            <!--trai-->
+            <FrameLayout
+                android:id="@+id/act_2_frame_trailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/apv3" />
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/act_2_group_single_radiobutton_frame_trai"
+                            android:layout_width="265dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorAccent"
+                            android:padding="5dp"
+                            app:tbgCheckedButton="@+id/act_2_choice_12"
+                            app:tbgChildSpacing="10dp">
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_12"
+                                android:layout_width="210dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
+            <!--trai-->
+
+            <FrameLayout
+                android:id="@+id/act_2_frame_apv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/apv" />
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/act_2_group_single_radiobutton_frame_apv"
+                            android:layout_width="265dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorAccent"
+                            android:padding="5dp"
+                            app:tbgCheckedButton="@+id/act_2_choice_1"
+                            app:tbgChildSpacing="10dp">
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_1"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_2"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_3"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/selector_text_radio_button" />
+
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_1"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_2"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_5"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_7"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_3"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_6"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/act_2_choice_8"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_4"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_7"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textColor="@color/selector_text_radio_button" />
+
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/surat"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="left"
+                    android:orientation="vertical">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="20dp">
+                        <android.support.v7.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/text_spj_berangkat_2_id_rak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nomor Rak"
+                            android:nextFocusDown="@id/text_spj_berangkat_2_tek_akhir"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        app:srcCompat="@drawable/kalori"
+                        tools:layout_editor_absoluteX="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Tekanan Akhir" />
+
+                        <EditText
+                            android:id="@+id/text_spj_berangkat_2_tek_akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number|numberDecimal"
+                            android:singleLine="true"
+                            android:nextFocusDown="@id/text_spj_berangkat_2_tek_sampai"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/temp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Tekanan Sampai Customer" />
+
+                        <EditText
+                            android:id="@+id/text_spj_berangkat_2_tek_sampai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number|numberDecimal"
+                            android:nextFocusDown="@+id/text_spj_berangkat_2_corrected"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        app:srcCompat="@drawable/air"
+                        tools:layout_editor_absoluteX="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Corrected Volume" />
+
+                        <EditText
+                            android:id="@+id/text_spj_berangkat_2_corrected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number|numberDecimal"
+                            android:nextFocusDown="@+id/text_spj_berangkat_2_uncorrected"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/air" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Uncorrected Volume" />
+                        <EditText
+                            android:id="@+id/text_spj_berangkat_2_uncorrected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number|numberDecimal"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_spj_berangkat_2_selesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:text="Selesai" />
+<!--Trailer-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalender"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="96dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="306dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="70dp"
+                        android:hint="Tanggal Kembali" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="6">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/text_spj_berangkat_2_tanggal_kembali"
+                        android:singleLine="true"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/button_spj_berangkat_2_tanggal_kembali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pilih"
+                        android:textSize="10dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--jam tiba di customer-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="96dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam Tiba di Customer"
+                        android:layout_marginLeft="70dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="6">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/text_spj_berangkat_2_tiba_customer"
+                        android:singleLine="true"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/button_spj_berangkat_2_tiba_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pilih"
+                        android:textSize="10dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--jam dari customer-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="96dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam dari Customer"
+                        android:layout_marginLeft="70dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="6">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/text_spj_berangkat_2_dari_customer"
+                        android:singleLine="true"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/button_spj_berangkat_2_dari_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pilih"
+                        android:textSize="10dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--jam tiba di plant-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="96dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam Tiba di Plant"
+                        android:layout_marginLeft="70dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="6">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/text_spj_berangkat_2_tiba_plant"
+                        android:singleLine="true"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/button_spj_berangkat_2_tiba_plant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pilih"
+                        android:textSize="10dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/km"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_km_akhir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="KM Akhir"
+                    android:inputType="number|numberDecimal"
+                    android:nextFocusDown="@+id/text_spj_berangkat_2_tek_turbin"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horeka"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_tek_turbin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tekanan Turbin"
+                    android:inputType="number|numberDecimal"
+                    android:nextFocusDown="@+id/text_spj_berangkat_2_temp_turbin"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_temp_turbin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nextFocusDown="@+id/text_spj_berangkat_2_meter_turbin"
+                    android:inputType="number|numberDecimal"
+                    android:hint="Temperatur Turbin"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_meter_turbin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nextFocusDown="@+id/text_spj_berangkat_2_komplain"
+                    android:inputType="number|numberDecimal"
+                    android:hint="Turbin Meter"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/keterangan"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_komplain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Komplain"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/keterangan"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:singleLine="true"
+                    android:id="@+id/text_spj_berangkat_2_keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Keterangan"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_spj_berangkat_2_kirim"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#00ff00"
+                android:background="#00ff00"
+                android:textColor="#ffffff"
+                android:text="Kirim" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/progressBar_spj_berangkat_2"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

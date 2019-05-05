@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/trailer"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="-10dp">
+
+                <TextView
+                    android:id="@+id/text_pengisian_moda_transport_awal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Moda Transport"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/group_single_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                app:tbgCheckedButton="@+id/choice_apv"
+                app:tbgChildSpacing="15dp">
+
+                <RadioButton
+                    android:id="@+id/choice_apv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_bg_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="APV"
+                    android:textColor="@color/selector_text_radio_button" />
+
+                <RadioButton
+                    android:id="@+id/choice_crane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_bg_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="HYAPCRANE"
+                    android:textColor="@color/selector_text_radio_button" />
+
+                <RadioButton
+                    android:id="@+id/choice_trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_bg_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="TRAILER"
+                    android:textColor="@color/selector_text_radio_button" />
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+
+            <!--tempat pemetaan moda trasnportasi-->
+
+            <!--trai-->
+            <!--hyap-->
+
+            <FrameLayout
+                android:id="@+id/frame_crane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:visibility="gone">
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/apv2" />
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/group_single_radiobutton_frame_hya"
+                            android:layout_width="265dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorAccent"
+                            android:padding="5dp"
+                            app:tbgCheckedButton="@+id/choice_9"
+                            app:tbgChildSpacing="10dp">
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_9"
+                                android:layout_width="70dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_10"
+                                android:layout_width="70dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_9"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_11"
+                                android:layout_width="70dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_10"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
+            <!--hyap-->
+
+            <!--trai-->
+            <FrameLayout
+                android:id="@+id/frame_trailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/apv3" />
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/group_single_radiobutton_frame_trai"
+                            android:layout_width="265dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorAccent"
+                            android:padding="5dp"
+                            app:tbgCheckedButton="@+id/choice_12"
+                            app:tbgChildSpacing="10dp">
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_12"
+                                android:layout_width="210dp"
+                                android:layout_height="105dp"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
+            <!--trai-->
+
+            <FrameLayout
+                android:id="@+id/frame_apv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="94dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/apv" />
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/group_single_radiobutton_frame_apv"
+                            android:layout_width="265dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorAccent"
+                            android:padding="5dp"
+                            app:tbgCheckedButton="@+id/choice_1"
+                            app:tbgChildSpacing="10dp">
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_1"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_2"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_3"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/selector_text_radio_button" />
+
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_1"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_2"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_5"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_7"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_3"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_6"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@color/selector_text_radio_button" />
+
+                            <com.nex3z.togglebuttongroup.button.CircularToggle
+                                android:id="@+id/choice_8"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/choice_4"
+                                android:layout_margin="1dp"
+                                android:layout_toRightOf="@id/choice_7"
+                                android:background="@drawable/selector_bg_radio_button"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textColor="@color/selector_text_radio_button" />
+
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </FrameLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/surat"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-72dp"
+                android:layout_marginBottom="20dp">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/text_id_rak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="96dp"
+                    android:hint="Nomor Rak"
+                    android:nextClusterForward="@+id/text_pengisian_tek_awal"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Awal"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori"
+                        tools:layout_editor_absoluteX="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Tek(Bar)" />
+
+                        <EditText
+                            android:id="@+id/text_pengisian_tek_awal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number|numberDecimal"
+                            android:nextFocusDown="@+id/text_pengisian_temp_awal"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/temp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Temp(C)" />
+
+                        <EditText
+                            android:id="@+id/text_pengisian_temp_awal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="32"
+                            android:inputType="number|numberDecimal"
+                            android:nextFocusDown="@+id/text_pengisian_sm3_awal"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori"
+                        tools:layout_editor_absoluteX="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="SM3 FPV" />
+
+                        <TextView
+                            android:id="@+id/text_pengisian_press_awal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="0.0"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="SM3 Awal" />
+
+                        <EditText
+                            android:id="@+id/text_pengisian_sm3_awal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number|numberDecimal"
+                            android:singleLine="true"
+                            android:textSize="20dp"
+                            android:nextFocusDown="@+id/text_pengisian_tek_akhir"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_kirim_data_awal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:text="Simpan"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compressor"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 01 WARU" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 06 WARU" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 02 WARU" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 07 WARU" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 03 WARU" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 08 WARU" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 04 WARU" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 09 WARU" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="155dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 05 WARU" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_compressor_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="C 10 WARU" />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#ffffff"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Durasi Waktu Pengisian"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+                <!--StopWatch-->
+                <TextView
+                    android:id="@+id/textView_stopwatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="00:00:00"
+                    android:textColor="#ff0000"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_mulai_hitung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_stopwatch"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="150dp"
+                    android:background="#ff0000"
+                    android:backgroundTint="#ff0000"
+                    android:text="Mulai Pengisian"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_selesai_hitung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="210dp"
+                    android:background="#ff0000"
+                    android:backgroundTint="#ff0000"
+                    android:text="Pengisian Selesai"
+                    android:textColor="#ffffff" />
+                <!--Stopwatch-->
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Akhir"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori"
+                        tools:layout_editor_absoluteX="16dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Tek(Bar)" />
+                        <EditText
+                            android:id="@+id/text_pengisian_tek_akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="200"
+                            android:inputType="number|numberDecimal"
+                            android:nextFocusDown="@+id/text_pengisian_temp_akhir"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/temp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Temp(C)" />
+
+                        <EditText
+                            android:id="@+id/text_pengisian_temp_akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="32"
+                            android:inputType="number|numberDecimal"
+                            android:nextFocusDown="@+id/text_pengisian_press_akhir"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori"
+                        tools:layout_editor_absoluteX="16dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Tek(Bar)" />
+                        <EditText
+                            android:id="@+id/text_pengisian_press_akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nextFocusDown="@+id/text_pengisian_sm3_akhir"
+                            android:inputType="number|numberDecimal"
+                            android:hint="0.0"
+                            android:enabled="false"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="SM3 Akhir" />
+                        <EditText
+                            android:id="@+id/text_pengisian_sm3_akhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nextFocusDown="@+id/text_isi_gas_keterangan"
+                            android:inputType="number|numberDecimal"
+                            android:singleLine="true"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="74dp"
+                        app:srcCompat="@drawable/kalori"
+                        tools:layout_editor_absoluteX="16dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="-90dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="0dp">
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/text_isi_gas_keterangan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="96dp"
+                                android:hint="Keterangan" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/button_isi_gas_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#F00"
+                        android:backgroundTint="#F00"
+                        android:text="Reset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp">
+
+                    <Button
+                        android:id="@+id/button_isi_gas_kirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00F"
+                        android:backgroundTint="#00F"
+                        android:text="Kirim" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar_isi_gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:title=""
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Beranda" />
+    </group>
+
+
+
+    <item android:title="Mesin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_generator"
+                    android:icon="@drawable/generator"
+                    android:title="Cek Generator" />
+                <item
+                    android:id="@+id/nav_compressor"
+                    android:icon="@drawable/compressor"
+                    android:title="Cek Compressor" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Surat Perintah Jalan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_spj_berangkat"
+                    android:icon="@drawable/spj1"
+                    android:title="Berangkat" />
+
+                <item
+                    android:id="@+id/nav_spj_kembali"
+                    android:icon="@drawable/spj2"
+                    android:title="Kembali" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Lembar Cek Pengiriman">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_berangkat"
+                    android:icon="@drawable/truck1"
+                    android:title="Berangkat" />
+
+                <item
+                    android:id="@+id/nav_kembali"
+                    android:icon="@drawable/truck2"
+                    android:title="Kembali" />
+
+                <item
+                    android:id="@+id/nav_trailer"
+                    android:icon="@drawable/trailer"
+                    android:title="Pergantian Trailer" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Lain">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_pengisian_gas_active"
+                    android:icon="@drawable/isi"
+                    android:title="Pengisian(dengan analisa)"/>
+                <item
+                    android:id="@+id/nav_kalori_gas"
+                    android:icon="@drawable/kalori"
+                    android:title="Kalori Gas" />
+                <item
+                    android:id="@+id/nav_pengisian_gas_inactive"
+                    android:icon="@drawable/isi"
+                    android:title="Pengisian(Tanpa Analisa)"/>
+                <item
+                    android:id="@+id/nav_customer_check"
+                    android:icon="@drawable/customer"
+                    android:title="Customer Check" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Akun">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_ubah_password"
+                    android:icon="@drawable/ubah"
+                    android:title="Ubah Password" />
+
+                <item
+                    android:id="@+id/nav_Logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

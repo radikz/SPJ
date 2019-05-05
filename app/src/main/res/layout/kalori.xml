@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"/>
+        
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_Specific"
+                    android:layout_marginLeft="96dp"
+                    android:hint="Specific Gravity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_CO2"
+                    android:layout_marginLeft="96dp"
+                    android:hint="Content CO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="249dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_N2"
+                    android:layout_marginLeft="96dp"
+                    android:hint="Content N2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_heating_value"
+                    android:layout_marginLeft="96dp"
+                    android:hint="Heating Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/keterangan"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_kalori_keterangan"
+                    android:layout_marginLeft="96dp"
+                    android:hint="Keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_keterangan_kirim"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:text="Kirim"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="522dp" />
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
+
+

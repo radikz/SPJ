@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/group_single_radiobutton_trailer_tiba_cek_lampu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="93dp"
+        android:padding="2dp"
+        app:tbgCheckedButton="@+id/choice_trailer_tiba_cek_lampu_nyala">
+
+        <RadioButton
+            android:id="@+id/choice_trailer_tiba_cek_lampu_tidak_nyala"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="26"
+            android:background="@drawable/selector_bg_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Tidak Menyala"
+            android:textSize="10dp"
+            android:textColor="@color/selector_text_radio_button"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <RadioButton
+            android:id="@+id/choice_trailer_tiba_cek_lampu_nyala"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="26"
+            android:background="@drawable/selector_bg_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Menyala"
+            android:textSize="10dp"
+            android:textColor="@color/selector_text_radio_button"
+            app:layout_constraintLeft_toRightOf="parent"/>
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/group_single_radiobutton_trailer_berangkat_kondisi_ban_depan_kiri_luar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/group_single_radiobutton_trailer_tiba_cek_lampu"
+        android:layout_marginLeft="93dp"
+        android:layout_marginBottom="0dp"
+        android:padding="2dp"
+        app:tbgCheckedButton="@+id/choice_trailer_berangkat_kondisi_ban_depan_kiri_luar_4">
+
+        <RadioButton
+            android:id="@+id/choice_trailer_berangkat_kondisi_ban_depan_kiri_luar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="13"
+            android:background="@drawable/selector_bg_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="25%"
+            android:textColor="@color/selector_text_radio_button"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/choice_trailer_berangkat_kondisi_ban_depan_kiri_luar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="13"
+            android:background="@drawable/selector_bg_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="50%"
+            android:textColor="@color/selector_text_radio_button"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/choice_trailer_berangkat_kondisi_ban_depan_kiri_luar_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="13"
+            android:background="@drawable/selector_bg_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="75%"
+            android:textColor="@color/selector_text_radio_button"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/choice_trailer_berangkat_kondisi_ban_depan_kiri_luar_4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="13"
+            android:background="@drawable/selector_bg_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="100%"
+            android:textColor="@color/selector_text_radio_button"
+            android:textSize="10dp" />
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+</LinearLayout>

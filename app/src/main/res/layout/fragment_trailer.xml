@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trailer Baru"
+                android:textSize="30dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/trailer"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_trailer_baru_moda_transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Moda Transport"
+                    android:enabled="false"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/selang"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:layout_marginRight="90dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/text_trailer_baru_pasang_selang_hose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:text="Pasang Selang hose pada Valve Decant Manifold bercode sama"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_baru_pasang_selang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-75dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+                <TextView
+                    android:id="@+id/textView_baru_pasang_selang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/valve"
+                tools:layout_editor_absoluteX="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:layout_marginRight="90dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/text_trailer_baru_buka_valve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Buka Valve Decant Manifold dan Trailer Transporter Panel yang tersambung"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+                <Switch
+                    android:id="@+id/switch_baru_buka_valve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-75dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView_baru_buka_valve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="here" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trailer Lama"
+                android:textSize="30dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/trailer"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_trailer_lama_moda_transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Customer"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/valve"
+                tools:layout_editor_absoluteX="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:layout_marginRight="90dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/text_trailer_lama_valve_ditransporter"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="valve di Trailer Transporter Panel yang tersambung ditutup"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+                <Switch
+                    android:id="@+id/switch_lama_valve_ditransporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-75dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_lama_valve_ditransporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/valve"
+                tools:layout_editor_absoluteX="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:layout_marginRight="90dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/text_trailer_lama_buka_valve"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:hint="Buka Valve Drain di Decant Manifold"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+                <Switch
+                    android:id="@+id/switch_lama_buka_valve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-75dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_lama_buka_valve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/selang"
+                tools:layout_editor_absoluteX="16dp"                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-74dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:layout_marginRight="90dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/text_trailer_lama_selang_hose"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:hint="Selang Hose dilepas dan dirapikan"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+                <Switch
+                    android:id="@+id/switch_lama_selang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-75dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_lama_selang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setelah semua yang diatas dilakukan tunggu 15 MENIT untuk memastikan bahwa gas sudah mengalir kedalam customer"
+                android:textColor="#ff0000"
+                android:textSize="17dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/keterangan"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_trailer_keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Keterangan"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp">
+                    <Button
+                        android:id="@+id/button_moda_transport_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp">
+                    <Button
+                        android:id="@+id/button_moda_transport_kirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kirim" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/progressBar_trailer"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

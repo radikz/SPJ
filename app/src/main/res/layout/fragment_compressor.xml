@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/compressor"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_compressor"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Compressor yang digunakan:" />
+
+                <Spinner
+                    android:id="@+id/spinner_compressor_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_weight="1" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_sift"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:hint="Shift:"
+                    android:layout_marginLeft="70dp" />
+                <Spinner
+                    android:id="@+id/spinner_compressor_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_weight="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam2"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_operating_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Operating Hours(h)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/oli"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Engine Compressor Oil"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+
+                <Switch
+                    android:id="@+id/switch_compressor_engine_compressor_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_engine_compressor_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/oli"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pompa Oli"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_pompa_oli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_pompa_oli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/oli"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Crankcase Oli"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+
+                <Switch
+                    android:id="@+id/switch_compressor_crankcase_oli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_crankcase_oli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/oli"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tekanan Oli"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_tekanan_oli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_tekanan_oli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gas In Pressure"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_gas_dalam_tekanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_gas_dalam_tekanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/belt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Belt Tension"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_belt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_belt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/rpm"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_rpm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RPM"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_ambient_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ambient Temperature(C)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/isi"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_crankcase_oil_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Crankcase Oil added(liter)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/isi"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_lubrication_oil_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lubrication Oil added(liter)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/cross"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_condensate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Condensate/Oil Removed(liter)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_inlet_pressure_stage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gas Inlet Pressure Stage 1 (bar)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gas Outlet Pressure Stage:(bar)"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="-15dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_outlet_pressure_stage_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="1"
+                    android:nextFocusDown="@+id/text_compressor_gas_outlet_pressure_stage_2"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_outlet_pressure_stage_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="2"
+                    android:nextFocusDown="@+id/text_compressor_gas_outlet_pressure_stage_3"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_outlet_pressure_stage_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="3"
+                    android:nextFocusDown="@+id/text_compressor_gas_outlet_pressure_stage_4"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_outlet_pressure_stage_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="4"
+                    android:nextFocusDown="@+id/text_compressor_gas_temperature_stage"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_temperature_stage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gas Temperature to Storage(C)"
+                    android:nextFocusDown="@+id/text_compressor_gas_temperature_stage_1"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gas Temperature Stage(C)"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="-15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_temperature_stage_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="1"
+                    android:nextFocusDown="@+id/text_compressor_gas_temperature_stage_2"/>
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_temperature_stage_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="2"
+                    android:nextFocusDown="@+id/text_compressor_gas_temperature_stage_3"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_temperature_stage_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="3"
+                    android:nextFocusDown="@+id/text_compressor_gas_temperature_stage_4"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_gas_temperature_stage_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number|numberDecimal"
+                    android:hint="4"
+                    android:nextFocusDown="@+id/text_compressor_volt"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_volt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Voltage (Volt)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_ampere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ampere"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_cos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cos Q"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/psv"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PSV"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_psv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_psv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/panel"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Panel Kontrol"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/sound"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_suara"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Suara Mesin" />
+
+                <Switch
+                    android:id="@+id/switch_compressor_suara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView_compressor_suara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/getar"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_vibrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vibrasi"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_vibrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_vibrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/bocor"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_bocor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kebocoran"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_bocor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_bocor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/clean"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_clean"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kebersihan"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp" />
+                <Switch
+                    android:id="@+id/switch_compressor_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+                <TextView
+                    android:id="@+id/textView_compressor_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="here"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRS"
+                android:textSize="40dp"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/psv"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_mrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MRS"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_tekanan_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tekanan (bar)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Temp(celcius)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/stand"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_stand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Standmeter(Turbine/EVC/Micromotion)"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/keterangan"
+                tools:layout_editor_absoluteX="16dp"
+                android:layout_marginTop="20dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                tools:layout_editor_absoluteX="96dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp">
+                <android.support.design.widget.TextInputEditText
+                    android:singleLine="true"
+                    android:id="@+id/text_compressor_keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Keterangan"
+                    android:layout_marginLeft="70dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp">
+                    <Button
+                        android:id="@+id/button_compressor_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#F00"
+                        android:backgroundTint="#F00"
+                        android:text="Reset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp">
+                    <Button
+                        android:id="@+id/button_compressor_kirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Kirim" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/progressBar_compressor"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

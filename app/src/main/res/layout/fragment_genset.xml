@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--genset-->
+            <TextView
+                android:id="@+id/textView_generator_generator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-25dp"
+                android:hint="Generator yang digunakan:" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/generator"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <Spinner
+                    android:id="@+id/spinner_generator_generator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"></Spinner>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView_generator_sift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="-25dp"
+                android:hint="Shift:" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <Spinner
+                    android:id="@+id/spinner_generator_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"></Spinner>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/jam2"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_running_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Operating Hours(H)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/bocor"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <TextView
+                    android:id="@+id/text_generator_water_leak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Water Leaking" />
+
+                <Switch
+                    android:id="@+id/switch_generator_water_leak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView_generator_water_leak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/bocor"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <TextView
+                    android:id="@+id/text_generator_oil_leaking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Oil Leaking" />
+
+                <Switch
+                    android:id="@+id/switch_generator_oil_leaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView_generator_oil_leaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/oil"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <TextView
+                    android:id="@+id/text_generator_oli_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Volume Oli" />
+
+                <Switch
+                    android:id="@+id/switch_generator_oil_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView_generator_oil_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/air"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <TextView
+                    android:id="@+id/text_compressor_water_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Water Volume" />
+
+                <Switch
+                    android:id="@+id/switch_generator_water_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView_generator_water_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/belt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <TextView
+                    android:id="@+id/text_generator_van_belt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Van Belt" />
+
+                <Switch
+                    android:id="@+id/switch_generator_van_belt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginRight="8dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView_generator_van_belt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="20dp"
+                    android:text="here" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_inlet_gas_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Inlet Gas Pressure - Before (Psl/Mpa)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_inlet_gas_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Inlet Gas Pressure - After (Psl/Mpa)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/isi"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_water_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Water Add (Liter)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/isi"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_engine_oil_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Engine Oil Add (Liter)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/power"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_power_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Power Battery /Accu (Volt DC)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/rpm"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_rpm_machine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="RPM Machine(RPM)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/volt"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_volt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Voltage(volt)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/ampere"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_ampere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Ampere Meter"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/panel"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_stand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Stand Meter(Turbine)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/frekuensi"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Frequency(Hz)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_ambient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Ambient Temperature(C)"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_generator_temp_turbo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="-15dp"
+                android:hint="Temperature Turbo(C)" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_turbo_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="I"
+                    android:nextFocusDown="@+id/text_generator_temp_turbo_2"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_turbo_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="II"
+                    android:nextFocusDown="@+id/text_generator_temp_exhaust_1"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_generator_temp_exhaust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="-15dp"
+                android:hint="Exhaust Temperature(C)" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_exhaust_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="I"
+                    android:nextFocusDown="@+id/text_generator_temp_exhaust_2"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_exhaust_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="II"
+                    android:nextFocusDown="@+id/text_generator_temp_oil_filter_1"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_generator_temp_oil_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="-15dp"
+                android:hint="Temperature Oil Filter" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_oil_filter_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="I"
+                    android:nextFocusDown="@+id/text_generator_temp_oil_filter_2"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_oil_filter_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="II"
+                    android:nextFocusDown="@+id/text_generator_water_temp"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_water_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Water Temperature(C)"
+                    android:nextFocusDown="@+id/text_generator_oil_pressure"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/kalori"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_oil_pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Oil Pressure"
+                    android:nextFocusDown="@+id/text_generator_current_1"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView_generator_current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="-15dp"
+                android:hint="Current(Amp)" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/current"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_current_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="L1"
+                    android:nextFocusDown="@+id/text_generator_current_2"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_current_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="L2"
+                    android:nextFocusDown="@+id/text_generator_current_3"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_current_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="L3"
+                    android:nextFocusDown="@+id/text_generator_temp_power_1"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_generator_temp_power"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Temperature Power Cable(C)" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/temp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_power_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="L1"
+                    android:nextFocusDown="@+id/text_generator_temp_power_2"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_power_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="L2"
+                    android:nextFocusDown="@+id/text_generator_temp_power_3"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_temp_power_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="L3"
+                    android:inputType="number|numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                app:srcCompat="@drawable/safety"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="96dp">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_generator_troubleshoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:hint="Troubleshooting"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/button_generator_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F00"
+                        android:background="#F00"
+                        android:text="Reset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="30dp">
+
+                    <Button
+                        android:id="@+id/button_generator_kirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:background="@color/colorPrimary"
+                        android:text="Kirim" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar_genset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
